@@ -15,6 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -24,19 +25,28 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".AssignmentActivity"/>
+      
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
+
         <activity
             android:name=".RegistrationActivity"
             android:label="@string/title_activity_login" />
+
+        <activity
+            android:name=".ClassAddListActivity"
+            android:label="@string/title_activity_class_add_list" />
+
         <activity
             android:name=".ClassActivity"
             android:label="Your Classes"
             android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait">
         </activity>
+
         <activity
             android:name=".ClassInfoActivity"
             android:screenOrientation="portrait">
@@ -44,11 +54,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ClassActivity" />
         </activity>
+
         <activity android:name=".InfoActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
+
         <activity android:name=".ChatActivity">
 
         </activity>
